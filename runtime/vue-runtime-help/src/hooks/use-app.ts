@@ -75,6 +75,7 @@ export const useApp = <T extends TMagicApp = TMagicApp>({
   config,
   iteratorContainerId,
   iteratorIndex,
+  pageFragmentContainerId,
 }: UseAppOptions) => {
   const app = inject<T>('app');
 
@@ -87,6 +88,7 @@ export const useApp = <T extends TMagicApp = TMagicApp>({
       config,
       iteratorContainerId,
       iteratorIndex,
+      pageFragmentContainerId,
     },
     app,
   );
